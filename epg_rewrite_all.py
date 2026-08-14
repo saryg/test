@@ -1,61 +1,61 @@
 #!/usr/bin/env python3
 """
-Rewrites epgshare01's combined ALL_SOURCES XMLTV guide so channel IDs match
-iptv-org's tvg-id scheme, covering every country at once.
+Rewrites epgshare01 XMLTV channel IDs to match iptv-org's tvg-id scheme,
+by fuzzy-matching channel display names, so exact-ID EPG matching works
+in IPTV players against iptv-org playlists.
  
-How it works:
-    1. Downloads epg_ripper_ALL_SOURCES1.xml.gz (epgshare01's everything-file).
-    2. For each channel, guesses its country from the trailing ".xx" code in
-       its epgshare id (e.g. "Sky.Greats.HD.uk" -> "uk").
-    3. Lazily downloads that country's iptv-org playlist (only once per
-       country actually present in the data) and builds a name index.
-    4. Matches by normalized channel name (exact, then fuzzy) same as the
-       single-country script, and rewrites ids + programme refs.
-    5. Countries with no iptv-org playlist, or with an id it can't parse a
-       country out of, are left alone and logged to skipped_countries.csv.
+Usage:
+    python3 rewrite_epg.py
  
+Reads config below (COUNTRIES), downloads iptv-org playlists + epgshare01
+guides, matches, rewrites, and writes:
+    - guide.xml       combined XMLTV with corrected channel ids
+    - review.csv       low-confidence matches to manually check
+    - unmatched.csv     epgshare01 channels that found no reasonable match
 """
  
 import gzip
-import os
+import io
 import re
 import sys
 import csv
-import tempfile
 import urllib.request
 import xml.etree.ElementTree as ET
 from rapidfuzz import fuzz, process
  
 # ── Config ──────────────────────────────────────────────────────────────
-ALL_SOURCES_URL = "https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz"
-PLAYLIST_URL_TEMPLATE = "https://iptv-org.github.io/iptv/countries/{cc}.m3u"
- 
-MATCH_THRESHOLD = 85
-REVIEW_THRESHOLD = 65
-USER_AGENT = "Mozilla/5.0 (compatible; epg-rewrite-script/1.0)"
- 
-# epgshare's trailing country code -> iptv-org's country code, where they
-# differ. iptv-org mostly uses standard lowercase ISO codes but keeps a few
-# historical exceptions (uk instead of gb, etc). Extend this if you spot
-# more mismatches in skipped_countries.csv after a run.
-COUNTRY_CODE_OVERRIDES = {
-    "uk": "uk",   # iptv-org keeps "uk", not "gb"
+COUNTRIES = {
+    "uk": {
+        "m3u_url": "https://iptv-org.github.io/iptv/countries/uk.m3u",
+        "epg_url": "https://epgshare01.online/epgshare01/epg_ripper_UK1.xml.gz",
+    },
+    "ie": {
+        "m3u_url": "https://iptv-org.github.io/iptv/countries/ie.m3u",
+        "epg_url": "https://epgshare01.online/epgshare01/epg_ripper_IE1.xml.gz",
+    },
+    "de": {
+        "m3u_url": "https://iptv-org.github.io/iptv/countries/de.m3u",
+        "epg_url": "https://epgshare01.online/epgshare01/epg_ripper_DE1.xml.gz",
+    },
 }
  
+MATCH_THRESHOLD = 85       # >= this score: auto-applied
+REVIEW_THRESHOLD = 65      # between this and MATCH_THRESHOLD: logged for review, not applied
+USER_AGENT = "Mozilla/5.0 (compatible; epg-rewrite-script/1.0)"
+ 
 NOISE_WORDS = re.compile(
-    r"\b(HD|SD|FHD|UHD|4K|PLUS1|\+1|EAST|WEST|HEVC|FALLBACK)\b",
+    r"\b(HD|SD|FHD|UHD|4K|PLUS1|\+1|EAST|WEST|UK|IE|DE|HEVC|FALLBACK)\b",
     re.IGNORECASE,
 )
-PAREN_BRACKET = re.compile(r"\([^)]*\)|\[[^\]]*\]")
 NON_ALNUM = re.compile(r"[^a-z0-9]+")
-COUNTRY_SUFFIX = re.compile(r"\.([a-zA-Z]{2})$")
  
  
-def normalize(name) -> str:
-    if not name:
-        return ""
+PAREN_BRACKET = re.compile(r"\([^)]*\)|\[[^\]]*\]")
+ 
+ 
+def normalize(name: str) -> str:
     name = name.strip()
-    name = PAREN_BRACKET.sub(" ", name)
+    name = PAREN_BRACKET.sub(" ", name)   # strip "(1080p)", "[Not 24/7]", etc.
     name = NOISE_WORDS.sub(" ", name)
     name = name.lower()
     name = NON_ALNUM.sub("", name)
@@ -64,41 +64,18 @@ def normalize(name) -> str:
  
 def fetch(url: str) -> bytes:
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(req, timeout=120) as resp:
+    with urllib.request.urlopen(req, timeout=60) as resp:
         return resp.read()
  
  
-def download_to_file(url: str, dest_path: str, chunk_size: int = 1024 * 1024) -> None:
-    """Streams a URL straight to disk instead of buffering it all in memory --
-    important for the ~200MB ALL_SOURCES file."""
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(req, timeout=300) as resp, open(dest_path, "wb") as out:
-        while True:
-            chunk = resp.read(chunk_size)
-            if not chunk:
-                break
-            out.write(chunk)
- 
- 
-def open_maybe_gzip(path: str):
-    """Returns a file-like object for streaming-reading path, transparently
-    decompressing if it's gzipped. Never loads the whole file into memory."""
-    with open(path, "rb") as f:
-        magic = f.read(2)
-    if magic == b"\x1f\x8b":
-        return gzip.open(path, "rb")
-    return open(path, "rb")
- 
- 
-def guess_country_code(epgshare_id: str) -> str | None:
-    m = COUNTRY_SUFFIX.search(epgshare_id)
-    if not m:
-        return None
-    code = m.group(1).lower()
-    return COUNTRY_CODE_OVERRIDES.get(code, code)
+def maybe_gunzip(data: bytes) -> bytes:
+    if data[:2] == b"\x1f\x8b":
+        return gzip.decompress(data)
+    return data
  
  
 def parse_m3u_channels(m3u_text: str):
+    """Returns list of (tvg_id, display_name)."""
     channels = []
     tvg_id_re = re.compile(r'tvg-id="([^"]*)"')
     name_re = re.compile(r',\s*(.+)$')
@@ -111,179 +88,148 @@ def parse_m3u_channels(m3u_text: str):
     return channels
  
  
+def load_country(code: str, cfg: dict):
+    print(f"[{code}] downloading playlist...", file=sys.stderr)
+    m3u_text = fetch(cfg["m3u_url"]).decode("utf-8", errors="replace")
+    playlist_channels = parse_m3u_channels(m3u_text)
+    print(f"[{code}] {len(playlist_channels)} playlist channels found", file=sys.stderr)
+ 
+    print(f"[{code}] downloading epgshare01 guide...", file=sys.stderr)
+    raw = maybe_gunzip(fetch(cfg["epg_url"]))
+    tree = ET.fromstring(raw)
+    return playlist_channels, tree
+ 
+ 
+MAX_PLAUSIBLE_KEY_LEN = 40   # a normalized channel name this long is almost certainly corrupted data
+CORRUPTION_MARKERS = ("likegecko", "safarivlc", "grouptitle", "libvlc")
+ 
+ 
+def is_plausible_name_key(key: str) -> bool:
+    if len(key) > MAX_PLAUSIBLE_KEY_LEN:
+        return False
+    if any(marker in key for marker in CORRUPTION_MARKERS):
+        return False
+    return True
+ 
+ 
 def build_name_index(playlist_channels):
+    """normalized_name -> tvg_id (first occurrence wins), plus lookup list for fuzzy search.
+    Skips entries whose name is obviously corrupted (e.g. leaked #EXTVLCOPT/user-agent
+    text from a malformed playlist line) so they never surface as false fuzzy candidates."""
     index = {}
     for tvg_id, name in playlist_channels:
         key = normalize(name)
-        if key and key not in index:
+        if key and is_plausible_name_key(key) and key not in index:
             index[key] = tvg_id
     return index
  
  
-class CountryIndexCache:
-    """Lazily downloads + caches an iptv-org playlist's name index per country."""
- 
-    def __init__(self):
-        self._cache = {}         # cc -> dict[normalized_name] = tvg_id  (or None if unavailable)
-        self.unavailable = set()
- 
-    def get(self, cc: str):
-        if cc in self._cache:
-            return self._cache[cc]
-        url = PLAYLIST_URL_TEMPLATE.format(cc=cc)
-        try:
-            print(f"  downloading playlist for '{cc}'...", file=sys.stderr)
-            text = fetch(url).decode("utf-8", errors="replace")
-            channels = parse_m3u_channels(text)
-            index = build_name_index(channels)
-            print(f"  '{cc}': {len(channels)} playlist channels", file=sys.stderr)
-        except Exception as e:
-            print(f"  '{cc}': playlist unavailable ({e})", file=sys.stderr)
-            index = None
-            self.unavailable.add(cc)
-        self._cache[cc] = index
-        return index
- 
- 
-def match_channel(old_id, display_name, cc, cache, id_map, review_rows, unmatched_rows):
-    """Returns the new id if matched/auto-applied, else None (and logs it)."""
-    name_index = cache.get(cc)
-    if name_index is None:
-        return None
- 
-    key = normalize(display_name)
-    if not key:
-        unmatched_rows.append([cc, old_id, display_name])
-        return None
- 
-    if key in name_index:
-        new_id = name_index[key]
-        id_map[old_id] = new_id
-        return new_id
- 
+def rewrite_country(code: str, cfg: dict, review_rows: list, unmatched_rows: list):
+    playlist_channels, tree = load_country(code, cfg)
+    name_index = build_name_index(playlist_channels)
     lookup_keys = list(name_index.keys())
-    result = process.extractOne(key, lookup_keys, scorer=fuzz.WRatio) if lookup_keys else None
-    if result:
-        best_key, score, _ = result
-        if score >= MATCH_THRESHOLD:
-            new_id = name_index[best_key]
-            id_map[old_id] = new_id
-            return new_id
-        elif score >= REVIEW_THRESHOLD:
-            review_rows.append([cc, old_id, display_name, name_index[best_key], best_key, score])
-            return None
  
-    unmatched_rows.append([cc, old_id, display_name])
-    return None
+    id_map = {}  # epgshare_id -> iptv_org_tvg_id
+    matched = skipped = unmatched = 0
+ 
+    for channel_el in tree.findall("channel"):
+        old_id = channel_el.get("id", "")
+        display_name_el = channel_el.find("display-name")
+        display_name = display_name_el.text if display_name_el is not None else old_id
+        key = normalize(display_name)
+ 
+        if not key:
+            unmatched += 1
+            continue
+ 
+        # Exact normalized match first
+        if key in name_index:
+            new_id = name_index[key]
+            id_map[old_id] = new_id
+            channel_el.set("id", new_id)
+            matched += 1
+            continue
+ 
+        # Fuzzy fallback
+        result = process.extractOne(key, lookup_keys, scorer=fuzz.WRatio)
+        if result:
+            best_key, score, _ = result
+            if score >= MATCH_THRESHOLD:
+                new_id = name_index[best_key]
+                id_map[old_id] = new_id
+                channel_el.set("id", new_id)
+                matched += 1
+                continue
+            elif score >= REVIEW_THRESHOLD:
+                review_rows.append([code, old_id, display_name, name_index[best_key], best_key, score])
+                skipped += 1
+                continue
+ 
+        unmatched_rows.append([code, old_id, display_name])
+        unmatched += 1
+ 
+    # Rewrite programme channel refs to match
+    for programme_el in tree.findall("programme"):
+        ch = programme_el.get("channel", "")
+        if ch in id_map:
+            programme_el.set("channel", id_map[ch])
+ 
+    print(
+        f"[{code}] matched={matched} review={skipped} unmatched={unmatched} "
+        f"(of {matched + skipped + unmatched} epgshare channels)",
+        file=sys.stderr,
+    )
+    return tree
+ 
+ 
+def merge_trees(trees):
+    root = ET.Element("tv", attrib={"generator-info-name": "epg-rewrite-script"})
+    seen_channel_ids = set()
+    for tree in trees:
+        for channel_el in tree.findall("channel"):
+            cid = channel_el.get("id")
+            if cid in seen_channel_ids:
+                continue
+            seen_channel_ids.add(cid)
+            root.append(channel_el)
+    for tree in trees:
+        for programme_el in tree.findall("programme"):
+            root.append(programme_el)
+    return ET.ElementTree(root)
  
  
 def main():
     review_rows = []
     unmatched_rows = []
-    skipped_country_rows = []
-    id_map = {}
-    cache = CountryIndexCache()
-    matched = 0
+    trees = []
  
-    tmpdir = tempfile.mkdtemp(prefix="epg-rewrite-")
-    gz_path = os.path.join(tmpdir, "all_sources.xml.gz")
-    channels_out_path = os.path.join(tmpdir, "channels.xml")
-    programmes_out_path = os.path.join(tmpdir, "programmes.xml")
+    for code, cfg in COUNTRIES.items():
+        try:
+            trees.append(rewrite_country(code, cfg, review_rows, unmatched_rows))
+        except Exception as e:
+            print(f"[{code}] FAILED: {e}", file=sys.stderr)
  
-    print("Downloading ALL_SOURCES guide (this is large, ~200MB compressed)...", file=sys.stderr)
-    download_to_file(ALL_SOURCES_URL, gz_path)
+    merged = merge_trees(trees)
+    merged.write("guide.xml", encoding="UTF-8", xml_declaration=True)
  
-    print("Streaming through XML (single pass -- never holds the whole file in memory)...", file=sys.stderr)
-    # XMLTV files list every <channel> before any <programme>, so a single
-    # forward streaming pass can build id_map from channels first, then use
-    # it immediately once programme elements start appearing.
-    count = 0
-    with open_maybe_gzip(gz_path) as xml_stream, \
-         open(channels_out_path, "w", encoding="utf-8") as channels_out, \
-         open(programmes_out_path, "w", encoding="utf-8") as programmes_out:
+    # Also write a gzipped copy -- TiviMate and most XMLTV clients accept
+    # .xml.gz directly, and it's a much smaller/faster download for a TV box
+    # than the raw XML (which can easily be 50-100+ MB uncompressed).
+    with open("guide.xml", "rb") as src, gzip.open("guide.xml.gz", "wb") as dst:
+        dst.write(src.read())
  
-        context = ET.iterparse(xml_stream, events=("start", "end"))
-        _, root = next(context)  # first event is the <tv> root's "start"
- 
-        for event, elem in context:
-            if event != "end":
-                continue
-            tag = elem.tag
-            if tag == "channel":
-                count += 1
-                if count % 5000 == 0:
-                    print(f"  ...{count} channels processed", file=sys.stderr)
- 
-                old_id = elem.get("id", "")
-                display_name_el = elem.find("display-name")
-                display_name = (
-                    display_name_el.text
-                    if display_name_el is not None and display_name_el.text
-                    else old_id
-                )
- 
-                cc = guess_country_code(old_id)
-                if not cc:
-                    skipped_country_rows.append([old_id, display_name, "no country code parsed from id"])
-                else:
-                    new_id = match_channel(old_id, display_name, cc, cache, id_map, review_rows, unmatched_rows)
-                    if new_id:
-                        elem.set("id", new_id)
-                        matched += 1
-                    elif cache.get(cc) is None:
-                        skipped_country_rows.append([old_id, display_name, f"no iptv-org playlist for '{cc}'"])
- 
-                channels_out.write(ET.tostring(elem, encoding="unicode"))
-                elem.clear()
-                root.clear()  # drop the now-empty stub root would otherwise keep referencing
- 
-            elif tag == "programme":
-                ch = elem.get("channel", "")
-                if ch in id_map:
-                    elem.set("channel", id_map[ch])
-                programmes_out.write(ET.tostring(elem, encoding="unicode"))
-                elem.clear()
-                root.clear()
- 
-    print(
-        f"\nDone matching: matched={matched} review={len(review_rows)} "
-        f"unmatched={len(unmatched_rows)} no_country_or_playlist={len(skipped_country_rows)}",
-        file=sys.stderr,
-    )
- 
-    print("Writing combined guide_all.xml...", file=sys.stderr)
-    with open("guide_all.xml", "w", encoding="utf-8") as out:
-        out.write('<?xml version="1.0" encoding="UTF-8"?>\n')
-        out.write('<tv generator-info-name="epg-rewrite-script">\n')
-        with open(channels_out_path, encoding="utf-8") as f:
-            for line in f:
-                out.write(line)
-        with open(programmes_out_path, encoding="utf-8") as f:
-            for line in f:
-                out.write(line)
-        out.write("</tv>\n")
- 
-    with open("review_all.csv", "w", newline="", encoding="utf-8") as f:
+    with open("review.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["country", "epgshare_id", "epgshare_name", "candidate_tvg_id", "candidate_key", "score"])
         w.writerows(review_rows)
  
-    with open("unmatched_all.csv", "w", newline="", encoding="utf-8") as f:
+    with open("unmatched.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["country", "epgshare_id", "epgshare_name"])
         w.writerows(unmatched_rows)
  
-    with open("skipped_countries_all.csv", "w", newline="", encoding="utf-8") as f:
-        w = csv.writer(f)
-        w.writerow(["epgshare_id", "epgshare_name", "reason"])
-        w.writerows(skipped_country_rows)
- 
-    print(
-        f"Wrote guide_all.xml, review_all.csv ({len(review_rows)}), "
-        f"unmatched_all.csv ({len(unmatched_rows)}), "
-        f"skipped_countries_all.csv ({len(skipped_country_rows)}).",
-        file=sys.stderr,
-    )
+    print(f"\nDone. Wrote guide.xml, review.csv ({len(review_rows)} rows), "
+          f"unmatched.csv ({len(unmatched_rows)} rows).", file=sys.stderr)
  
  
 if __name__ == "__main__":
