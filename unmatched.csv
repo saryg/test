@@ -192,6 +192,7 @@ ie,Nat.Geo.Wild.HD.ie,Nat Geo Wild HD
 ie,Sky.History.2.ie,Sky History 2
 ie,Bloomberg.ie,Bloomberg
 ie,Netflix.300.ie,Netflix 300
+ie,Sky.Premiere.HD.ie,Sky Premiere HD
 ie,Sky.Select.HD.ie,Sky Select HD
 ie,Sky.Greats.HD.ie,Sky Greats HD
 ie,Sky.Family.HD.ie,Sky Family HD
@@ -200,6 +201,7 @@ ie,Sky.Thriller.HD.ie,Sky Thriller HD
 ie,Sky.Animation.HD.ie,Sky Animation HD
 ie,Film.Four.ie,Film Four
 ie,Sky.Animation.ie,Sky Animation
+ie,Sky.Premiere.ie,Sky Premiere
 ie,Sky.Select.ie,Sky Select
 ie,Sky.Greats.ie,Sky Greats
 ie,Sky.Family.ie,Sky Family
@@ -207,6 +209,16 @@ ie,Sky.Cinema.Comedy.ie,Sky Cinema Comedy
 ie,Sky.Thriller.ie,Sky Thriller
 ie,Racing.UK.ie,Racing UK
 ie,MUTV.ie,MUTV
+ie,TNT.Sports.2.HD.ie,TNT Sports 2 HD
+ie,TNT.Sports.3.HD.ie,TNT Sports 3 HD
+ie,TNT.Sports.4.HD.ie,TNT Sports 4 HD
+ie,Premier.Sports.1.HD.ie,Premier Sports 1 HD
+ie,Premier.Sports.2.HD.ie,Premier Sports 2 HD
+ie,TNT.Sports.2.ie,TNT Sports 2
+ie,TNT.Sports.3.ie,TNT Sports 3
+ie,TNT.Sports.4.ie,TNT Sports 4
+ie,Premier.Sports.1.ie,Premier Sports 1
+ie,Premier.Sports.2.ie,Premier Sports 2
 ie,E4+1.ie,E4+1
 ie,U&Gold.+1.ie,U&Gold +1
 ie,FILMFOUR.+1.ie,FILMFOUR +1
@@ -227,6 +239,7 @@ ie,Sky.Documentaries.ie,Sky Documentaries
 ie,Zee.TV.ie,Zee TV
 ie,PPV.HD.ie,PPV HD
 de,DMAX.de,DMAX
+de,sportdigital.Fussball.de,sportdigital Fussball
 de,TOGGO.plus.de,TOGGO plus
 de,Fix.&.Foxi.de,Fix & Foxi
 de,Disney.Channel.de,Disney Channel
@@ -237,6 +250,7 @@ de,BBC.World.News.de,BBC World News
 de,BBC.News.de,BBC News
 de,CNN.International.de,CNN International
 de,CNN.Türk.de,CNN Türk
+de,euronews.(ger).de,euronews (ger)
 de,Al.Jazeera.de,Al Jazeera
 de,BBC.One.de,BBC One
 de,BBC.four.de,BBC four

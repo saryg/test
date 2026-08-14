@@ -136,6 +136,7 @@ uk,Movies24+.uk,Movies24+,PlutoTVComedyMovies.de@GB,plutotvcomedymovies,77.14285
 uk,Vox.Africa.uk,Vox Africa,NollyAfrica.uk@SD,nollyafrica,70.0
 uk,TNTSBoxOff2HD.uk,TNTSBoxOff2HD,TBNUK.uk@SD,tbn,72.0
 uk,Madani.Chnl.uk,Madani Chnl,EmanChannel.uk@SD,emanchannel,66.66666666666667
+uk,Sky.Sports.NFL.uk,Sky Sports NFL,SkySportsGolf.uk@HD,skysportsgolf,80.0
 uk,5.USA.uk,5 USA,UtsavBharat.uk@SD,utsavbharat,67.5
 uk,Legend.Xtra.uk,Legend Xtra,TraceUK.uk@HD,trace,67.5
 uk,Foodxp.uk,Foodxp,PlutoTVFood.de@GB,plutotvfood,72.0
@@ -219,12 +220,10 @@ ie,U&Drama.ie,U&Drama,PlutoTVCrimeDrama.de@GB,plutotvcrimedrama,81.8181818181818
 ie,Crime.&.Investigation.HD.ie,Crime & Investigation HD,CSICrimeSceneInvestigation.de@GB,csicrimesceneinvestigation,81.81818181818181
 ie,CNN.HD.ie,CNN HD,OireachtasTVDailEireann.ie@SD,oireachtastvdilireann,72.0
 ie,Blaze.ie,Blaze,MissionImpossible.de@GB,missionimpossible,67.5
-ie,Sky.Premiere.HD.ie,Sky Premiere HD,PremierSports1.ie@SD,likegeckochrome120000safari53736vlc3021libvlc3021grouptitlesportspremiersports1,65.45454545454547
 ie,Sky.Hits.HD.ie,Sky Hits HD,SkySportsF1.ie@SD,skysportsf1,65.45454545454547
 ie,Sky.Horror.HD.ie,Sky Horror HD,PlutoTVFantasyHorror.de@GB,plutotvfantasyhorror,84.70588235294117
 ie,Sky.Drama.HD.ie,Sky Drama HD,PlutoTVCrimeDrama.de@GB,plutotvcrimedrama,69.23076923076923
 ie,Sky.Action.HD.ie,Sky Action HD,PlutoTV80sAction.de@GB,plutotv80saction,78.75
-ie,Sky.Premiere.ie,Sky Premiere,PremierSports1.ie@SD,likegeckochrome120000safari53736vlc3021libvlc3021grouptitlesportspremiersports1,65.45454545454547
 ie,Sky.Hits.ie,Sky Hits,SkySportsF1.ie@SD,skysportsf1,65.45454545454547
 ie,Sky.Horror.ie,Sky Horror,PlutoTVFantasyHorror.de@GB,plutotvfantasyhorror,84.70588235294117
 ie,Sky.Drama.ie,Sky Drama,PlutoTVCrimeDrama.de@GB,plutotvcrimedrama,69.23076923076923
@@ -234,23 +233,19 @@ ie,Sky.Sports.Premier.League.HD.ie,Sky Sports Premier League HD,SkySportsF1.ie@S
 ie,Sky.Sports.Cricket.HD.ie,Sky Sports Cricket HD,SkySportsMainEvent.ie@HD,skysportsmainevent,70.58823529411764
 ie,Sky.Sports.Action.HD.ie,Sky Sports Action HD,SkySportsMainEvent.ie@HD,skysportsmainevent,72.72727272727273
 ie,Sky.Sports.Plus.HD.ie,Sky Sports Plus HD,SkySportsGolf.uk@HD,skysportsgolf,76.92307692307692
-ie,Sky.Sports.Mix.HD.ie,Sky Sports Mix HD,SkySportsMainEvent.ie@SD,likegeckochrome120000safari53736vlc3021libvlc3021grouptitlesportsskysportsmainevent,82.5
-ie,Sky.Sports.Tennis.HD.ie,Sky Sports Tennis HD,SkySportsNews.uk@SD,likegeckochrome120000safari53736vlc3021libvlc3021grouptitlesportsskysportsnews,70.71428571428571
+ie,Sky.Sports.News.HD.ie,Sky Sports News HD,SkyNews.ie@SD,skynews,75.00000000000001
+ie,Sky.Sports.Mix.HD.ie,Sky Sports Mix HD,SkySportsMainEvent.ie@HD,skysportsmainevent,82.5
+ie,Sky.Sports.Tennis.HD.ie,Sky Sports Tennis HD,SkySportsF1.ie@SD,skysportsf1,69.23076923076923
 ie,Sky.Sports.Racing.HD.ie,Sky Sports Racing HD,SkySportsMainEvent.ie@HD,skysportsmainevent,72.72727272727273
-ie,TNT.Sports.1.HD.ie,TNT Sports 1 HD,SetantaSports1Eurasia.ie@SD,likegeckochrome149000safari53736grouptitlesportssetantasports1eurasia,81.0
-ie,TNT.Sports.2.HD.ie,TNT Sports 2 HD,SetantaSports2Eurasia.ie@SD,likegeckochrome149000safari53736grouptitlesportssetantasports2eurasia,81.0
-ie,TNT.Sports.3.HD.ie,TNT Sports 3 HD,SetantaSports1Eurasia.ie@SD,likegeckochrome149000safari53736grouptitlesportssetantasports1eurasia,72.0
-ie,TNT.Sports.4.HD.ie,TNT Sports 4 HD,SetantaSports1Eurasia.ie@SD,likegeckochrome149000safari53736grouptitlesportssetantasports1eurasia,72.0
+ie,TNT.Sports.1.HD.ie,TNT Sports 1 HD,SkySportsF1.ie@SD,skysportsf1,66.66666666666667
 ie,Sky.Sports.Premier.League.ie,Sky Sports Premier League,SkySportsF1.ie@SD,skysportsf1,81.0
 ie,Sky.Sports.Cricket.ie,Sky Sports Cricket,SkySportsMainEvent.ie@HD,skysportsmainevent,70.58823529411764
 ie,Sky.Sports.Action.ie,Sky Sports Action,SkySportsMainEvent.ie@HD,skysportsmainevent,72.72727272727273
 ie,Sky.Sports.Plus.ie,Sky Sports Plus,SkySportsGolf.uk@HD,skysportsgolf,76.92307692307692
-ie,Sky.Sports.Mix.ie,Sky Sports Mix,SkySportsMainEvent.ie@SD,likegeckochrome120000safari53736vlc3021libvlc3021grouptitlesportsskysportsmainevent,82.5
-ie,Sky.Sports.Tennis.ie,Sky Sports Tennis,SkySportsNews.uk@SD,likegeckochrome120000safari53736vlc3021libvlc3021grouptitlesportsskysportsnews,70.71428571428571
-ie,TNT.Sports.1.ie,TNT Sports 1,SetantaSports1Eurasia.ie@SD,likegeckochrome149000safari53736grouptitlesportssetantasports1eurasia,81.0
-ie,TNT.Sports.2.ie,TNT Sports 2,SetantaSports2Eurasia.ie@SD,likegeckochrome149000safari53736grouptitlesportssetantasports2eurasia,81.0
-ie,TNT.Sports.3.ie,TNT Sports 3,SetantaSports1Eurasia.ie@SD,likegeckochrome149000safari53736grouptitlesportssetantasports1eurasia,72.0
-ie,TNT.Sports.4.ie,TNT Sports 4,SetantaSports1Eurasia.ie@SD,likegeckochrome149000safari53736grouptitlesportssetantasports1eurasia,72.0
+ie,Sky.Sports.News.ie,Sky Sports News,SkyNews.ie@SD,skynews,75.00000000000001
+ie,Sky.Sports.Mix.ie,Sky Sports Mix,SkySportsMainEvent.ie@HD,skysportsmainevent,82.5
+ie,Sky.Sports.Tennis.ie,Sky Sports Tennis,SkySportsF1.ie@SD,skysportsf1,69.23076923076923
+ie,TNT.Sports.1.ie,TNT Sports 1,SkySportsF1.ie@SD,skysportsf1,66.66666666666667
 ie,Disc.Channel.+1.ie,Disc Channel +1,ChannelS.uk@SD,channels,78.75
 ie,Channel.4.+1.ie,Channel 4 +1,ChannelS.uk@SD,channels,82.35294117647058
 ie,Sky.Witness.+1.ie,Sky Witness +1,SkyNews.ie@SD,skynews,66.66666666666667
@@ -286,7 +281,6 @@ de,kabel.eins.Doku.de,kabel eins Doku,kabeleins.de@SD,kabeleins,81.8181818181818
 de,Prime.HD.de,Prime HD,PlutoTVCrime.de@DACH,plutotvcrime,80.0
 de,Bloomberg.Europe.TV.de,Bloomberg Europe TV,TVA.de@SD,tva,72.0
 de,CNBC.de,CNBC,OFTVOffenbach.de@SD,oftvoffenbach,67.5
-de,euronews.(ger).de,euronews (ger),OstWest.de@SD,likegeckochrome149000safari5373grouptitleculturenewsost,67.5
 de,France.24.(engl.).de,France 24 (engl.),RAN1.de@SD,ran1,67.5
 de,France.24.(franz.).de,France 24 (franz.),RAN1.de@SD,ran1,67.5
 de,NHK.World.TV.de,NHK World TV,TVA.de@SD,tva,72.0
@@ -342,9 +336,9 @@ de,DAZN.1.de,DAZN 1,DAZNDartsxPlutoTV.de@DACH,dazndartsxplutotv,80.0
 de,DAZN.2.de,DAZN 2,DAZNDartsxPlutoTV.de@DACH,dazndartsxplutotv,80.0
 de,Sky.Showcase.HD.de,Sky Showcase HD,HSE.de@SD,hse,72.0
 de,eoTV.de,eoTV,AristoTV.de@SD,aristotv,77.14285714285715
-de,FUSSBALL.TV.1.de,FUSSBALL.TV 1,SportdigitalFUSSBALL.de@SD,likegeckochrome120000safari53736vlc3021libvlc3021grouptitlesportssportdigitalfussball,75.78947368421052
-de,FUSSBALL.TV.2.de,FUSSBALL.TV 2,SportdigitalFUSSBALL.de@SD,likegeckochrome120000safari53736vlc3021libvlc3021grouptitlesportssportdigitalfussball,75.78947368421052
-de,FUSSBALL.TV.3.de,FUSSBALL.TV 3,SportdigitalFUSSBALL.de@SD,likegeckochrome120000safari53736vlc3021libvlc3021grouptitlesportssportdigitalfussball,75.78947368421052
+de,FUSSBALL.TV.1.de,FUSSBALL.TV 1,AllgauTV.de@SD,allgutv,69.23076923076923
+de,FUSSBALL.TV.2.de,FUSSBALL.TV 2,AllgauTV.de@SD,allgutv,69.23076923076923
+de,FUSSBALL.TV.3.de,FUSSBALL.TV 3,AllgauTV.de@SD,allgutv,69.23076923076923
 de,Top.Serien.de,Top Serien,PlutoTVHorrorSerien.de@DACH,plutotvhorrorserien,74.11764705882352
 de,tv-media.PULS.24.de,PULS 24,BibelTVImpuls.de@SD,bibeltvimpuls,72.0
 de,DFB.Play.de,DFB Play,DMF.de@SD,dmf,72.0
