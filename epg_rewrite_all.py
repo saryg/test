@@ -6,13 +6,14 @@ iptv-org's tvg-id scheme, covering every country at once.
 How it works:
     1. Downloads epg_ripper_ALL_SOURCES1.xml.gz (epgshare01's everything-file).
     2. For each channel, guesses its country from the trailing ".xx" code in
-       its epgshare id.
+       its epgshare id (e.g. "Sky.Greats.HD.uk" -> "uk").
     3. Lazily downloads that country's iptv-org playlist (only once per
        country actually present in the data) and builds a name index.
     4. Matches by normalized channel name (exact, then fuzzy) same as the
        single-country script, and rewrites ids + programme refs.
     5. Countries with no iptv-org playlist, or with an id it can't parse a
        country out of, are left alone and logged to skipped_countries.csv.
+ 
 """
  
 import gzip
@@ -50,7 +51,9 @@ NON_ALNUM = re.compile(r"[^a-z0-9]+")
 COUNTRY_SUFFIX = re.compile(r"\.([a-zA-Z]{2})$")
  
  
-def normalize(name: str) -> str:
+def normalize(name) -> str:
+    if not name:
+        return ""
     name = name.strip()
     name = PAREN_BRACKET.sub(" ", name)
     name = NOISE_WORDS.sub(" ", name)
@@ -213,7 +216,11 @@ def main():
  
                 old_id = elem.get("id", "")
                 display_name_el = elem.find("display-name")
-                display_name = display_name_el.text if display_name_el is not None else old_id
+                display_name = (
+                    display_name_el.text
+                    if display_name_el is not None and display_name_el.text
+                    else old_id
+                )
  
                 cc = guess_country_code(old_id)
                 if not cc:
