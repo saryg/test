@@ -23,7 +23,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run all-sources rewrite script
-        run: python3 rewrite_epg_all.py
+        run: python3 epg_rewrite_all.py
 
       - name: Commit updated guide
         run: |
