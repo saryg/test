@@ -281,7 +281,3 @@ def main():
  
 if __name__ == "__main__":
     main()
- 
-
-
-Downloaded epg-rewrite-script.zip Show in Explorer
