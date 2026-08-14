@@ -1,28 +1,3 @@
-
-Cloud
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Rewrite epg all · PY
 #!/usr/bin/env python3
 """
 Rewrites epgshare01's combined ALL_SOURCES XMLTV guide so channel IDs match
