@@ -1,0 +1,34 @@
+name: Update EPG guide (all countries)
+
+on:
+  schedule:
+    - cron: '0 5 * * *'   # daily at 05:00 UTC (offset from the UK/IE/DE job)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  rewrite-all:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90   # this is a much bigger job than the 3-country version
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run all-sources rewrite script
+        run: python3 rewrite_epg_all.py
+
+      - name: Commit updated guide
+        run: |
+          git config user.name "epg-bot"
+          git config user.email "epg-bot@users.noreply.github.com"
+          git add guide_all.xml review_all.csv unmatched_all.csv skipped_countries_all.csv
+          git diff --cached --quiet && echo "No changes" || git commit -m "Update all-sources EPG guide $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push
