@@ -1,215 +1,215 @@
 country,epgshare_id,epgshare_name,candidate_tvg_id,candidate_key,score
-uk,GEO.News.uk,GEO News,GBNews.uk@SD,gbnews,76.92307692307692
-uk,BBC.R5L.uk,BBC R5L,BBCUHD1.uk@SD,bbc1,77.14285714285715
-uk,PBS.America.uk,PBS America,MTA8America.uk@SD,mta8america,66.66666666666667
-uk,BBC.R.Foyle.uk,BBC R Foyle,BBCUHD1.uk@SD,bbc1,77.14285714285715
-uk,Zee.Cinema.uk,Zee Cinema,ZeeOne.uk@UK,zeeone,66.66666666666667
-uk,BabyTV.uk,BabyTV,AhlulbaytTV.uk@SD,ahlulbayttv,75.00000000000001
-uk,TNT.Sports.10.HD.uk,TNT Sports 10 HD,TBNUK.uk@SD,tbn,72.0
-uk,BBC.R.n.Gael.uk,BBC R n Gael,BBCUHD1.uk@SD,bbc1,77.14285714285715
-uk,ITV3+1.uk,ITV3+1,KanshiTV.uk@SD,kanshitv,77.14285714285715
-uk,TNT.Sports.7.HD.uk,TNT Sports 7 HD,TBNUK.uk@SD,tbn,72.0
-uk,TWR.uk,TWR,TraceUK.uk@HD,trace,72.0
-uk,TNT.Sports.5.HD.uk,TNT Sports 5 HD,TBNUK.uk@SD,tbn,72.0
+uk,BBC.R.Cymru.2.uk,BBC R Cymru 2,BBCUHD1.uk@SD,bbc1,77.14285714285715
+uk,LBC.uk,LBC,BBCThreeCBBC.uk@HD,bbcthreecbbc,72.0
+uk,Forces.TV.uk,Forces TV,TalkingPicturesTV.uk@SD,talkingpicturestv,69.23076923076923
+uk,TVC.News.uk,TVC News,BBCNews.uk@UK,bbcnews,71.42857142857143
+uk,BBC.Radio.Sussex.uk,BBC Radio Sussex,BBCUHD1.uk@SD,bbc1,77.14285714285715
+uk,More4.HD.uk,More4 HD,MoreTVCrime.de@GB,moretvcrime,80.0
+uk,Sky.Sports.Ultra.HD.2.uk,Sky Sports Ultra HD 2,SkySportsGolf.uk@HD,skysportsgolf,71.42857142857143
+uk,Jazz.FM.uk,Jazz FM,JAG.de@GB,jag,72.0
 uk,BBC.R4.LW.uk,BBC R4 LW,BBCUHD1.uk@SD,bbc1,77.14285714285715
-uk,WION.HD.uk,WION HD,BeyondBeliefFactorFiction.us@UK,beyondbelieffactorfiction,77.14285714285715
-uk,SkyHistory2HD.uk,SkyHistory2HD,SkyMix.uk@HD,skymix,65.45454545454547
-uk,Browse.Shop.uk,Browse Shop,Pop.uk@SD,pop,72.0
-uk,Aastha.uk,Aastha,AathavanTV.uk@SD,aathavantv,81.81818181818181
+uk,TNT.Sports.10.HD.uk,TNT Sports 10 HD,TBNUK.uk@SD,tbn,72.0
+uk,Venus.TV.uk,Venus TV,MUTV.uk@SD,mutv,67.5
+uk,Sky.Adventure.uk,Sky Adventure,SkyNature.uk@SD,skynature,76.19047619047619
+uk,Disc.History.uk,Disc.History,AutenticHistory.de@SD,autentichistory,69.23076923076923
+uk,TLC+1.uk,TLC+1,TJC.uk@SD,tjc,66.66666666666667
+uk,A1TV.uk,A1TV,BritAsiaTV.uk@HD,britasiatv,77.14285714285715
+uk,B4U.Music.uk,B4U Music,VantageMusic.ee@UK,vantagemusic,69.23076923076923
+uk,TNTSBoxOff2HD.uk,TNTSBoxOff2HD,TBNUK.uk@SD,tbn,72.0
+uk,SkyMegaHitsHD.uk,SkyMegaHitsHD,SkyMix.uk@HD,skymix,72.0
+uk,TNT.Sports.5.HD.uk,TNT Sports 5 HD,TBNUK.uk@SD,tbn,72.0
+uk,BBC.R4.FM.uk,BBC R4 FM,BBCUHD1.uk@SD,bbc1,77.14285714285715
+uk,Sky.Cinema.Select.uk,Sky Cinema Select,SkyMix.uk@HD,skymix,65.45454545454547
+uk,SkyNewsArabia.uk,SkyNewsArabia,SkyNewsWeather.uk@SD,skynewsweather,66.66666666666667
+uk,SkySp.F1.HD.uk,SkySp F1 HD,SkySportsF1.uk@HD,skysportsf1,77.77777777777779
+uk,BBC.6.Music.uk,BBC 6 Music,BBCUHD1.uk@SD,bbc1,77.14285714285715
+uk,Really.uk,Really,SoReal.us@UK,soreal,66.66666666666667
+uk,Heart.80s.uk,Heart 80s,Thats80s.uk@SD,thats80s,75.0
+uk,Sikh.Channel.uk,Sikh Channel,Channel5.uk@SD,channel5,73.6842105263158
+uk,U.and.Drama.uk,U and Drama,Andromeda.us@UK,andromeda,66.66666666666667
+uk,Al.Jazeera.HD.uk,Al Jazeera HD,Blaze.uk@SD,blaze,72.0
+uk,Nick.Jr+1.uk,Nick Jr+1,Nickelodeon.uk@SD,nickelodeon,72.0
+uk,Sky.History+1.uk,Sky History+1,AutenticHistory.de@SD,autentichistory,74.11764705882352
+uk,Pitaara..uk,Pitaara ,ParanormalState.us@UK,paranormalstate,65.45454545454547
+uk,ROK.uk,ROK,MyTimeMovieNetwork.uk@SD,mytimemovienetwork,72.0
+uk,U.and.W.HD.uk,U and W HD,Andromeda.us@UK,andromeda,67.5
+uk,Virgin.Media.One.HD.uk,Virgin Media One HD,TVOne.uk@SD,tvone,67.5
+uk,Craft.Extra.uk,Craft Extra,TraceUK.uk@HD,trace,67.5
+uk,BBC.R.Scot..uk,BBC R Scot.,BBCUHD1.uk@SD,bbc1,77.14285714285715
+uk,Sky.Cinema.Hits.HD.uk,Sky Cinema Hits HD,SkyMix.uk@HD,skymix,65.45454545454547
+uk,TNT.Sports.8.HD.uk,TNT Sports 8 HD,TBNUK.uk@SD,tbn,72.0
+uk,SkySp.News.HD.uk,SkySp News HD,SkyNewsWeather.uk@SD,skynewsweather,78.75
+uk,Babenation.uk,Babenation,IonTV.uk@SD,iontv,67.5
+uk,Classic.Rock.uk,Classic Rock,NOWRock.uk@SD,nowrock,65.45454545454547
 uk,Sky.Crime.HD.uk,Sky Crime HD,PlutoTVAmericanTrueCrime.de@GB,plutotvamericantruecrime,69.23076923076923
-uk,Clubland.TV.uk,Clubland TV,ClubbingTV.us@UK,clubbingtv,70.0
+uk,TRT.World.HD.uk,TRT World HD,MTA1World.uk@SD,mta1world,70.58823529411764
+uk,Iran.Intl.HD.uk,Iran Intl HD,IranInternational.uk@SD,iraninternational,84.0
+uk,Classic.FM.uk,Classic FM,PlutoTVClassicTV.de@GB,plutotvclassictv,70.00000000000001
+uk,GREAT!.tv+1.uk,GREAT! tv+1,GREATmovies.uk@UK,greatmovies,75.00000000000001
+uk,U.and.Drama+1.uk,U and Drama+1,Andromeda.us@UK,andromeda,66.66666666666667
+uk,Racing.TV.uk,Racing TV,IonTV.uk@SD,iontv,72.0
+uk,BBC.R.Cymru.uk,BBC R Cymru,BBCUHD1.uk@SD,bbc1,77.14285714285715
+uk,Film4+1.uk,Film4+1,PlutoTVCultFilms.de@GB,plutotvcultfilms,72.0
+uk,POLITICSPUNJAB.uk,POLITICSPUNJAB,Pop.uk@SD,pop,72.0
+uk,Zee.Cinema.uk,Zee Cinema,ZeeOne.uk@UK,zeeone,66.66666666666667
+uk,Sky.Witness.HD.uk,Sky Witness HD,SkyMix.uk@HD,skymix,65.45454545454547
+uk,BBC.WS.uk,BBC WS,BBCNews.uk@UK,bbcnews,83.33333333333334
+uk,QUEST.HD.uk,QUEST HD,QwestTVJazzBeyond.fr@SD,qwesttvjazzbeyond,72.0
+uk,Sky.Sci-Fi.HD.uk,Sky Sci-Fi HD,PlutoTVSciFi.de@GB,plutotvscifi,69.23076923076923
+uk,mta-muslim.tv.uk,mta-muslim tv,MUTV.uk@SD,mutv,77.14285714285715
+uk,BBC.Radio.Bristol.94.9FM.uk,BBC Radio Bristol 94.9FM,BBCUHD1.uk@SD,bbc1,77.14285714285715
+uk,True.Crime.Xtra.uk,True Crime Xtra,TrueCrime.uk@SD,truecrime,81.81818181818181
+uk,EarthxTV.HD.uk,EarthxTV HD,AdventureEarth.de@SD,adventureearth,69.23076923076923
+uk,High.Street.TV.1.uk,High Street TV 1,ITV1.uk@London,itv1,77.14285714285715
+uk,WildEarth.uk,WildEarth,WildatHeart.us@UK,wildatheart,80.0
+uk,HGTV.uk,HGTV,ClubbingTV.us@UK,clubbingtv,77.14285714285715
+uk,TNT.Sports.6.HD.uk,TNT Sports 6 HD,TBNUK.uk@SD,tbn,72.0
+uk,Greatest.Hits.uk,Greatest Hits,XITEHits.nl@UK,xitehits,69.23076923076923
+uk,Legend.Xtra+1.uk,Legend Xtra+1,TraceUK.uk@HD,trace,67.5
+uk,TNT.Sport.BoxOffice.HD.uk,TNT Sport BoxOffice HD,TBNUK.uk@SD,tbn,72.0
+uk,BBC.R.n.Gael.uk,BBC R n Gael,BBCUHD1.uk@SD,bbc1,77.14285714285715
+uk,92.News.uk,92 News,DunyaNewsUK.uk@SD,dunyanews,72.0
+uk,Arise.News.uk,Arise News,GBNews.uk@SD,gbnews,72.0
+uk,BBC.R.Wales.uk,BBC R Wales,BBCOne.uk@Wales,bbconewales,80.0
+uk,ComedyXtra.uk,ComedyXtra,TraceUK.uk@HD,trace,67.5
+uk,SkySpBoxOff.uk,SkySpBoxOff,SkySportsGolf.uk@HD,skysportsgolf,66.66666666666667
+uk,Sky.Crime+1.uk,Sky Crime+1,PlutoTVAmericanTrueCrime.de@GB,plutotvamericantruecrime,69.23076923076923
+uk,Movies24+.uk,Movies24+,PlutoTVComedyMovies.de@GB,plutotvcomedymovies,77.14285714285715
+uk,TNT.Sports.1.HD.uk,TNT Sports 1 HD,TBNUK.uk@SD,tbn,72.0
+uk,Capital.XTRA.uk,Capital XTRA,TraceUK.uk@HD,trace,67.5
+uk,Legend.Xtra.uk,Legend Xtra,TraceUK.uk@HD,trace,67.5
+uk,4seven.uk,4seven,HighwaytoHeaven.us@UK,highwaytoheaven,65.45454545454547
+uk,Thats.Melody.uk,Thats Melody,ThatsTV.uk@SD,thatstv,75.00000000000001
+uk,GINXeSportsTV.uk,GINXeSportsTV,ThatsTV.uk@SD,thatstv,65.45454545454547
+uk,SkyHistory2HD.uk,SkyHistory2HD,SkyMix.uk@HD,skymix,65.45454545454547
+uk,Sky.History2.uk,Sky History2,SkyMix.uk@HD,skymix,65.45454545454547
+uk,Zee.TV.HD.uk,Zee TV HD,DeenTV.uk@SD,deentv,72.72727272727273
+uk,FRANCE.24.HD.uk,FRANCE 24 HD,TraceUK.uk@HD,trace,72.0
+uk,NOW.90s.uk,NOW 90s,Now70s.uk@SD,now70s,83.33333333333334
+uk,Direct.Store.TV.uk,Direct Store TV,DerTV.uk@SD,dertv,67.5
 uk,PCNE.Chinese.HD.uk,PCNE Chinese HD,CNBCUK.uk@SD,cnbc,67.5
 uk,BBC.R5SX.uk,BBC R5SX,BBCUHD1.uk@SD,bbc1,77.14285714285715
-uk,BBC.R.Cymru.uk,BBC R Cymru,BBCUHD1.uk@SD,bbc1,77.14285714285715
-uk,More4+1.uk,More4+1,MoreTVCrime.de@GB,moretvcrime,80.0
-uk,B4U.Music.uk,B4U Music,VantageMusic.ee@UK,vantagemusic,69.23076923076923
-uk,Xpanded.TV.uk,Xpanded TV,DerTV.uk@SD,dertv,72.0
-uk,SkySp.PL.HD.uk,SkySp PL HD,SkySportsCricket.uk@HD,skysportscricket,75.00000000000001
-uk,SkySp.Action.uk,SkySp Action,IonTV.uk@SD,iontv,67.5
-uk,5.USA.uk,5 USA,UtsavBharat.uk@SD,utsavbharat,67.5
-uk,Classic.FM.uk,Classic FM,PlutoTVClassicTV.de@GB,plutotvclassictv,70.00000000000001
-uk,TRT.World.uk,TRT World,MTA1World.uk@SD,mta1world,70.58823529411764
-uk,BBC.Radio.Sussex.uk,BBC Radio Sussex,BBCUHD1.uk@SD,bbc1,77.14285714285715
-uk,5ACTION.uk,5ACTION,MrBeanLiveAction.uk@SD,mrbeanliveaction,83.07692307692308
-uk,Racing.TV.uk,Racing TV,IonTV.uk@SD,iontv,72.0
-uk,GEO.TV.uk,GEO TV,GODTV.uk@SD,godtv,80.0
-uk,Arise.News.uk,Arise News,GBNews.uk@SD,gbnews,72.0
-uk,TNT.Sports.8.HD.uk,TNT Sports 8 HD,TBNUK.uk@SD,tbn,72.0
-uk,True.Crime.Xtra.uk,True Crime Xtra,TrueCrime.uk@SD,truecrime,81.81818181818181
-uk,RTÉ.R.na.G.uk,RTÉ R na G,JAG.de@GB,jag,72.0
-uk,Utsav.Gold.HD.uk,Utsav Gold HD,UtsavPlus.uk@SD,utsavplus,66.66666666666667
-uk,LBC.uk,LBC,BBCThreeCBBC.uk@HD,bbcthreecbbc,72.0
-uk,Dunamis.TV.uk,Dunamis TV,ITV1.uk@London,itv1,67.5
-uk,Sky.Action.uk,Sky Action,PlutoTV80sAction.de@GB,plutotv80saction,78.75
-uk,High.Street.TV.1.uk,High Street TV 1,ITV1.uk@London,itv1,77.14285714285715
-uk,BBC.Radio.Bristol.DAB.uk,BBC Radio Bristol DAB,BBCUHD1.uk@SD,bbc1,77.14285714285715
-uk,Disc.History+1.uk,Disc.History+1,AutenticHistory.de@SD,autentichistory,69.23076923076923
-uk,Forces.TV.uk,Forces TV,TalkingPicturesTV.uk@SD,talkingpicturestv,69.23076923076923
-uk,TNT.Sports.Box.Office.2.uk,TNT Sports Box Office 2,TBNUK.uk@SD,tbn,72.0
-uk,Film4+1.uk,Film4+1,PlutoTVCultFilms.de@GB,plutotvcultfilms,72.0
-uk,FRANCE.24.HD.uk,FRANCE 24 HD,TraceUK.uk@HD,trace,72.0
-uk,Capital.XTRA.uk,Capital XTRA,TraceUK.uk@HD,trace,67.5
-uk,BBC.R.Cymru.2.uk,BBC R Cymru 2,BBCUHD1.uk@SD,bbc1,77.14285714285715
-uk,Legend.Xtra+1.uk,Legend Xtra+1,TraceUK.uk@HD,trace,67.5
-uk,GREAT!.tv.uk,GREAT! tv,GREATmovies.uk@UK,greatmovies,75.00000000000001
-uk,Sky.Cinema.Comedy.uk,Sky Cinema Comedy,SkyMix.uk@HD,skymix,65.45454545454547
-uk,TLC+1.uk,TLC+1,TJC.uk@SD,tjc,66.66666666666667
-uk,TLC.HD.uk,TLC HD,TJC.uk@SD,tjc,66.66666666666667
-uk,Virgin.Media.Three.uk,Virgin Media Three,BBCThree.uk@SD,bbcthree,69.23076923076923
-uk,Sky.Witness+1.uk,Sky Witness+1,SkyMix.uk@HD,skymix,65.45454545454547
-uk,SkySpBoxOff.uk,SkySpBoxOff,SkySportsGolf.uk@HD,skysportsgolf,66.66666666666667
-uk,ROK.uk,ROK,MyTimeMovieNetwork.uk@SD,mytimemovienetwork,72.0
-uk,Thats.Melody.uk,Thats Melody,ThatsTV.uk@SD,thatstv,75.00000000000001
-uk,Vox.Africa.uk,Vox Africa,NollyAfrica.uk@SD,nollyafrica,70.0
-uk,Jazz.FM.uk,Jazz FM,JAG.de@GB,jag,72.0
-uk,ITV4.HD.uk,ITV4 HD,KanshiTV.uk@SD,kanshitv,77.14285714285715
-uk,5USA+1.uk,5USA+1,UtsavBharat.uk@SD,utsavbharat,67.5
-uk,TVC.News.uk,TVC News,BBCNews.uk@UK,bbcnews,71.42857142857143
-uk,Direct.Store.TV.uk,Direct Store TV,DerTV.uk@SD,dertv,67.5
-uk,Virgin.Media.One.HD.uk,Virgin Media One HD,TVOne.uk@SD,tvone,67.5
-uk,Sky.Adventure.uk,Sky Adventure,SkyNature.uk@SD,skynature,76.19047619047619
-uk,QUEST+1.uk,QUEST+1,QwestTVJazzBeyond.fr@SD,qwesttvjazzbeyond,72.0
-uk,B4U.Movies.uk,B4U Movies,PlutoTVComedyMovies.de@GB,plutotvcomedymovies,72.0
-uk,Sky.One.HD.uk,Sky One HD,SkyNewsWeather.uk@SD,skynewsweather,81.81818181818181
-uk,Venus.TV.uk,Venus TV,MUTV.uk@SD,mutv,67.5
-uk,The.Craft.Store.uk,The Craft Store,SoReal.us@UK,soreal,65.45454545454547
-uk,TNT.Sports.Ultimate.HD.uk,TNT Sports Ultimate HD,TBNUK.uk@SD,tbn,72.0
-uk,U.and.alibi.HD.uk,U and alibi HD,UAlibi.uk@SD,ualibi,81.81818181818181
-uk,5STAR.uk,5STAR,StarVijay.in@UK,starvijay,80.0
-uk,Madani.Chnl.uk,Madani Chnl,EmanChannel.uk@SD,emanchannel,66.66666666666667
-uk,Box.Hits.uk,Box Hits,XITEHits.nl@UK,xitehits,66.66666666666667
-uk,U.and.Drama.uk,U and Drama,Andromeda.us@UK,andromeda,66.66666666666667
-uk,92.News.uk,92 News,DunyaNewsUK.uk@SD,dunyanews,72.0
-uk,Nick.Jr+1.uk,Nick Jr+1,Nickelodeon.uk@SD,nickelodeon,72.0
-uk,STV.North.uk,STV North,BBCTwo.uk@NorthernIreland,bbctwonorthernireland,67.5
-uk,SkyNewsArabia.uk,SkyNewsArabia,SkyNewsWeather.uk@SD,skynewsweather,66.66666666666667
-uk,Sky.Arts.HD.uk,Sky Arts HD,SkySportsF1.uk@HD,skysportsf1,66.66666666666667
-uk,Sky.Sports.Ultra.HD.1.uk,Sky Sports Ultra HD 1,SkySportsF1.uk@HD,skysportsf1,76.92307692307692
-uk,SkyAdventureHD.uk,SkyAdventureHD,AdventureEarth.de@SD,adventureearth,71.42857142857143
-uk,BBC.Radio.Bristol.94.9FM.uk,BBC Radio Bristol 94.9FM,BBCUHD1.uk@SD,bbc1,77.14285714285715
-uk,NDTV.24x7.uk,NDTV 24x7,ITV2.uk@HD,itv2,67.5
-uk,G!.romance+1.uk,G! romance+1,GREATromance.uk@UK,greatromance,84.0
-uk,Movies24+.uk,Movies24+,PlutoTVComedyMovies.de@GB,plutotvcomedymovies,77.14285714285715
-uk,Arirang.TV.HD.uk,Arirang TV HD,GODTV.uk@SD,godtv,67.5
-uk,A1TV.uk,A1TV,BritAsiaTV.uk@HD,britasiatv,77.14285714285715
-uk,PCNE.Chinese.uk,PCNE Chinese,CNBCUK.uk@SD,cnbc,67.5
-uk,Sky.Cinema.Hits.HD.uk,Sky Cinema Hits HD,SkyMix.uk@HD,skymix,65.45454545454547
-uk,Zee.TV.HD.uk,Zee TV HD,DeenTV.uk@SD,deentv,72.72727272727273
-uk,BBC.Radio.Bristol.104.6FM.uk,BBC Radio Bristol 104.6FM,BBCUHD1.uk@SD,bbc1,77.14285714285715
-uk,Sky.Kids.HD.uk,Sky Kids HD,MoonbugKids.uk@SD,moonbugkids,65.45454545454547
-uk,Channel.44.uk,Channel 44,Channel5.uk@SD,channel5,82.35294117647058
-uk,TNT.Sports.9.HD.uk,TNT Sports 9 HD,TBNUK.uk@SD,tbn,72.0
-uk,Greatest.Hits.Radio.(West.Sussex).uk,Greatest Hits Radio (West Sussex),GREATmovies.uk@UK,greatmovies,70.00000000000001
-uk,BBC.R1X.uk,BBC R1X,BBCRedButton1.uk@SD,bbcrb1,83.33333333333334
-uk,BBC.R4.FM.uk,BBC R4 FM,BBCUHD1.uk@SD,bbc1,77.14285714285715
-uk,U.and.Real.Heroes.uk,U and Real Heroes,Andromeda.us@UK,andromeda,67.5
-uk,EarthxTV.HD.uk,EarthxTV HD,AdventureEarth.de@SD,adventureearth,69.23076923076923
-uk,GINXeSportsTV.uk,GINXeSportsTV,ThatsTV.uk@SD,thatstv,65.45454545454547
-uk,Sky.Action.HD.uk,Sky Action HD,PlutoTV80sAction.de@GB,plutotv80saction,78.75
-uk,BBC.R4.Ex.uk,BBC R4 Ex,BBCUHD1.uk@SD,bbc1,77.14285714285715
-uk,Classic.Rock.uk,Classic Rock,NOWRock.uk@SD,nowrock,65.45454545454547
-uk,GREAT!.action.uk,GREAT! action,IonTV.uk@SD,iontv,67.5
-uk,Sky.Crime+1.uk,Sky Crime+1,PlutoTVAmericanTrueCrime.de@GB,plutotvamericantruecrime,69.23076923076923
-uk,ComedyXtra.uk,ComedyXtra,TraceUK.uk@HD,trace,67.5
-uk,BBC.R.Scot..uk,BBC R Scot.,BBCUHD1.uk@SD,bbc1,77.14285714285715
-uk,BBC.R.Wales.uk,BBC R Wales,BBCOne.uk@Wales,bbconewales,80.0
-uk,TRT.World.HD.uk,TRT World HD,MTA1World.uk@SD,mta1world,70.58823529411764
-uk,Adult.Channel.uk,Adult Channel,Channel5.uk@SD,channel5,84.0
-uk,SkyMegaHitsHD.uk,SkyMegaHitsHD,SkyMix.uk@HD,skymix,72.0
-uk,Ahlebait.TV.uk,Ahlebait TV,AhlulbaytTV.uk@SD,ahlulbayttv,76.19047619047619
-uk,NOW.90s00s.uk,NOW 90s00s,Now70s.uk@SD,now70s,75.00000000000001
-uk,E4.Extra.uk,E4 Extra,QVCExtra.uk@SD,qvcextra,66.66666666666667
-uk,U.and.W.HD.uk,U and W HD,Andromeda.us@UK,andromeda,67.5
-uk,Racing.TV.HD.uk,Racing TV HD,IonTV.uk@SD,iontv,72.0
-uk,TNT.Sport.BoxOffice.HD.uk,TNT Sport BoxOffice HD,TBNUK.uk@SD,tbn,72.0
-uk,BBC.R.Ulster.uk,BBC R Ulster,BBCUHD1.uk@SD,bbc1,77.14285714285715
-uk,Ideal.Extra.uk,Ideal Extra,TraceUK.uk@HD,trace,67.5
-uk,Craft.Extra.uk,Craft Extra,TraceUK.uk@HD,trace,67.5
-uk,Travelxp.uk,Travelxp,AutenticTravel.de@SD,autentictravel,77.14285714285715
-uk,GOD.Channel.uk,GOD Channel,Channel5.uk@SD,channel5,77.77777777777779
-uk,Word.Network.uk,Word Network,MyTimeMovieNetwork.uk@SD,mytimemovienetwork,70.00000000000001
-uk,5STAR+1.uk,5STAR+1,StarVijay.in@UK,starvijay,80.0
-uk,TNT.Sports.3.HD.uk,TNT Sports 3 HD,TBNUK.uk@SD,tbn,72.0
-uk,Babenation.uk,Babenation,IonTV.uk@SD,iontv,67.5
-uk,TNT.Sports.Box.Office.uk,TNT Sports Box Office,TBNUK.uk@SD,tbn,72.0
-uk,HGTV+1.uk,HGTV+1,ClubbingTV.us@UK,clubbingtv,77.14285714285715
-uk,Smooth.uk,Smooth,BBCOne.uk@South,bbconesouth,65.45454545454547
-uk,Sky.Drama.HD.uk,Sky Drama HD,PlutoTVCrimeDrama.de@GB,plutotvcrimedrama,69.23076923076923
-uk,NHK.World.HD.uk,NHK World HD,WorldPokerTour.us@UK,worldpokertour,69.23076923076923
-uk,Good.News.TV.uk,Good News TV,GODTV.uk@SD,godtv,66.66666666666667
-uk,BBC.Asian.uk,BBC Asian,BBCPersian.uk@SD,bbcpersian,77.77777777777779
-uk,Heart.80s.uk,Heart 80s,Thats80s.uk@SD,thats80s,75.0
-uk,TNTSBoxOff2HD.uk,TNTSBoxOff2HD,TBNUK.uk@SD,tbn,72.0
-uk,NOW.90s.uk,NOW 90s,Now70s.uk@SD,now70s,83.33333333333334
-uk,SONY.TV.HD.uk,SONY TV HD,IonTV.uk@SD,iontv,72.72727272727273
-uk,ITV3.HD.uk,ITV3 HD,KanshiTV.uk@SD,kanshitv,77.14285714285715
-uk,QUEST.uk,QUEST,QwestTVJazzBeyond.fr@SD,qwesttvjazzbeyond,72.0
-uk,Iran.Intl.HD.uk,Iran Intl HD,IranInternational.uk@SD,iraninternational,84.0
-uk,Greatest.Hits.uk,Greatest Hits,XITEHits.nl@UK,xitehits,69.23076923076923
-uk,WildEarth.uk,WildEarth,WildatHeart.us@UK,wildatheart,80.0
-uk,SkySp.Golf.uk,SkySp Golf,SkySportsGolf.uk@HD,skysportsgolf,81.81818181818181
-uk,Sky.Sci-Fi.HD.uk,Sky Sci-Fi HD,PlutoTVSciFi.de@GB,plutotvscifi,69.23076923076923
-uk,HGTV.uk,HGTV,ClubbingTV.us@UK,clubbingtv,77.14285714285715
-uk,U.and.Gold.uk,Gold,FaithWorldTV.uk@SD,faithworldtv,67.5
-uk,Sky.History+1.uk,Sky History+1,AutenticHistory.de@SD,autentichistory,74.11764705882352
-uk,More4.HD.uk,More4 HD,MoreTVCrime.de@GB,moretvcrime,80.0
-uk,TNT.Sports.6.HD.uk,TNT Sports 6 HD,TBNUK.uk@SD,tbn,72.0
-uk,Sky.History2.uk,Sky History2,SkyMix.uk@HD,skymix,65.45454545454547
 uk,Spotlight.TV.uk,Spotlight TV,ThatsTV.uk@SD,thatstv,65.45454545454547
-uk,High.Street.TV.2.uk,High Street TV 2,ITV2.uk@HD,itv2,77.14285714285715
-uk,Legend.Xtra.uk,Legend Xtra,TraceUK.uk@HD,trace,67.5
-uk,Sky.HistoryHD.uk,Sky HistoryHD,SkyMix.uk@HD,skymix,65.45454545454547
-uk,BBC.6.Music.uk,BBC 6 Music,BBCUHD1.uk@SD,bbc1,77.14285714285715
-uk,Crime+Inv+1.uk,Crime+Inv+1,PlutoTVAmericanTrueCrime.de@GB,plutotvamericantruecrime,69.23076923076923
-uk,Film4.HD.uk,Film4 HD,PlutoTVCultFilms.de@GB,plutotvcultfilms,72.0
-uk,MTV.80s.uk,MTV 80s,MUTV.uk@SD,mutv,77.14285714285715
-uk,Sikh.Channel.uk,Sikh Channel,Channel5.uk@SD,channel5,73.6842105263158
-uk,TNT.Sports.2.HD.uk,TNT Sports 2 HD,TBNUK.uk@SD,tbn,72.0
-uk,POLITICSPUNJAB.uk,POLITICSPUNJAB,Pop.uk@SD,pop,72.0
-uk,Utsav.GOLD.uk,Utsav GOLD,UtsavPlus.uk@SD,utsavplus,66.66666666666667
-uk,Sky.Sports.Ultra.HD.2.uk,Sky Sports Ultra HD 2,SkySportsGolf.uk@HD,skysportsgolf,71.42857142857143
-uk,Sky.Cinema.Select.uk,Sky Cinema Select,SkyMix.uk@HD,skymix,65.45454545454547
-uk,TNT.Sports.1.HD.uk,TNT Sports 1 HD,TBNUK.uk@SD,tbn,72.0
-uk,Islam.TV.uk,Islam TV,MUTV.uk@SD,mutv,77.14285714285715
-uk,Al.Jazeera.HD.uk,Al Jazeera HD,Blaze.uk@SD,blaze,72.0
-uk,SkySp.News.HD.uk,SkySp News HD,SkyNewsWeather.uk@SD,skynewsweather,78.75
-uk,mta-muslim.tv.uk,mta-muslim tv,MUTV.uk@SD,mutv,77.14285714285715
-uk,The.Box.uk,The Box,DogtheBountyHunter.us@UK,dogthebountyhunter,75.00000000000001
-uk,Food.Network.uk,Food Network,MyTimeMovieNetwork.uk@SD,mytimemovienetwork,70.00000000000001
-uk,Pitaara..uk,Pitaara ,ParanormalState.us@UK,paranormalstate,65.45454545454547
-uk,STV.Central.uk,STV Central,QVCExtra.uk@SD,qvcextra,66.66666666666667
-uk,SkySp.F1.HD.uk,SkySp F1 HD,SkySportsF1.uk@HD,skysportsf1,77.77777777777779
-uk,Sky.Family.HD.uk,Sky Family HD,ENTFamily.uk@HD,entfamily,66.66666666666667
-uk,U.and.Drama+1.uk,U and Drama+1,Andromeda.us@UK,andromeda,66.66666666666667
-uk,Crime+Inv.HD.uk,Crime+Inv HD,PlutoTVAmericanTrueCrime.de@GB,plutotvamericantruecrime,69.23076923076923
-uk,Disc.History.uk,Disc.History,AutenticHistory.de@SD,autentichistory,69.23076923076923
-uk,TCM.Movies+1.uk,TCM Movies+1,RakutenTVDramaMovies.es@UK,rakutentvdramamovies,74.11764705882352
-uk,ITV4+1.uk,ITV4+1,KanshiTV.uk@SD,kanshitv,77.14285714285715
-uk,SkySp.F1.uk,SkySp F1,SkySportsF1.uk@HD,skysportsf1,77.77777777777779
-uk,MATV.National.uk,MATV National,IranInternational.uk@SD,iraninternational,68.96551724137932
-uk,QUEST.HD.uk,QUEST HD,QwestTVJazzBeyond.fr@SD,qwesttvjazzbeyond,72.0
-uk,4seven.uk,4seven,HighwaytoHeaven.us@UK,highwaytoheaven,65.45454545454547
-uk,SkySp.Golf.HD.uk,SkySp Golf HD,SkySportsGolf.uk@HD,skysportsgolf,81.81818181818181
-uk,LFCTV.HD.uk,LFCTV HD,HellenicTV.uk@SD,hellenictv,67.5
+uk,Greatest.Hits.Radio.(West.Sussex).uk,Greatest Hits Radio (West Sussex),GREATmovies.uk@UK,greatmovies,70.00000000000001
 uk,ITV.Quiz.uk,ITV Quiz,ITV1.uk@London,itv1,77.14285714285715
-uk,Movies24.uk,Movies24,PlutoTVComedyMovies.de@GB,plutotvcomedymovies,77.14285714285715
-uk,Foodxp.uk,Foodxp,PlutoTVFood.de@GB,plutotvfood,72.0
-uk,HUM.EUROPE.uk,HUM EUROPE,MTA2Europe.uk@SD,mta2europe,73.6842105263158
-uk,Nick.Jr..HD.uk,Nick Jr. HD,Nickelodeon.uk@SD,nickelodeon,72.0
-uk,BBC.WS.uk,BBC WS,BBCNews.uk@UK,bbcnews,83.33333333333334
+uk,Good.News.TV.uk,Good News TV,GODTV.uk@SD,godtv,66.66666666666667
+uk,TCM.Movies+1.uk,TCM Movies+1,RakutenTVDramaMovies.es@UK,rakutentvdramamovies,74.11764705882352
+uk,GREAT!.action.uk,GREAT! action,IonTV.uk@SD,iontv,67.5
+uk,Virgin.Media.Three.uk,Virgin Media Three,BBCThree.uk@SD,bbcthree,69.23076923076923
+uk,BBC.R.Ulster.uk,BBC R Ulster,BBCUHD1.uk@SD,bbc1,77.14285714285715
 uk,BBC.RLondon.uk,BBC RLondon,BBCOne.uk@London,bbconelondon,81.81818181818181
-uk,TNT.Sports.4.HD.uk,TNT Sports 4 HD,S4C.uk@SD,s4c,72.0
-uk,CHSTV.uk,CHSTV,AutenticHistory.de@SD,autentichistory,72.0
-uk,Sky.Witness.HD.uk,Sky Witness HD,SkyMix.uk@HD,skymix,65.45454545454547
 uk,Virgin.Media.Four.HD.uk,Virgin Media Four HD,BBCFour.uk@UK,bbcfour,65.45454545454547
-uk,GREAT!action+1.uk,GREAT!action+1,IonTV.uk@SD,iontv,67.5
-uk,Cartoonito.uk,Cartoonito,KTO.fr@SD,kto,72.0
-uk,KICC.TV.uk,KICC TV,HellenicTV.uk@SD,hellenictv,72.0
-uk,U.and.W+1.uk,U and W+1,Andromeda.us@UK,andromeda,67.5
+uk,TNT.Sports.3.HD.uk,TNT Sports 3 HD,TBNUK.uk@SD,tbn,72.0
+uk,Ideal.Extra.uk,Ideal Extra,TraceUK.uk@HD,trace,67.5
+uk,Box.Hits.uk,Box Hits,XITEHits.nl@UK,xitehits,66.66666666666667
+uk,Travelxp.uk,Travelxp,AutenticTravel.de@SD,autentictravel,77.14285714285715
+uk,Sky.Action.HD.uk,Sky Action HD,PlutoTV80sAction.de@GB,plutotv80saction,78.75
+uk,U.and.Gold.uk,Gold,FaithWorldTV.uk@SD,faithworldtv,67.5
+uk,Sky.Sports.Ultra.HD.1.uk,Sky Sports Ultra HD 1,SkySportsF1.uk@HD,skysportsf1,76.92307692307692
+uk,TNT.Sports.7.HD.uk,TNT Sports 7 HD,TBNUK.uk@SD,tbn,72.0
+uk,MATV.National.uk,MATV National,IranInternational.uk@SD,iraninternational,68.96551724137932
+uk,CHSTV.uk,CHSTV,AutenticHistory.de@SD,autentichistory,72.0
+uk,BBC.Radio.Bristol.104.6FM.uk,BBC Radio Bristol 104.6FM,BBCUHD1.uk@SD,bbc1,77.14285714285715
+uk,Racing.TV.HD.uk,Racing TV HD,IonTV.uk@SD,iontv,72.0
+uk,Adult.Channel.uk,Adult Channel,Channel5.uk@SD,channel5,84.0
+uk,5.USA.uk,5 USA,UtsavBharat.uk@SD,utsavbharat,67.5
+uk,Sky.Action.uk,Sky Action,PlutoTV80sAction.de@GB,plutotv80saction,78.75
+uk,STV.North.uk,STV North,BBCTwo.uk@NorthernIreland,bbctwonorthernireland,67.5
+uk,SkySp.Action.uk,SkySp Action,IonTV.uk@SD,iontv,67.5
+uk,BBC.R5L.uk,BBC R5L,BBCUHD1.uk@SD,bbc1,77.14285714285715
+uk,TRT.World.uk,TRT World,MTA1World.uk@SD,mta1world,70.58823529411764
+uk,BBC.R1X.uk,BBC R1X,BBCRedButton1.uk@SD,bbcrb1,83.33333333333334
+uk,G!.romance+1.uk,G! romance+1,GREATromance.uk@UK,greatromance,84.0
+uk,E4.Extra.uk,E4 Extra,QVCExtra.uk@SD,qvcextra,66.66666666666667
 uk,CITV.uk,CITV,HellenicTV.uk@SD,hellenictv,77.14285714285715
-uk,GREAT!.tv+1.uk,GREAT! tv+1,GREATmovies.uk@UK,greatmovies,75.00000000000001
+uk,Aastha.uk,Aastha,AathavanTV.uk@SD,aathavantv,81.81818181818181
+uk,Food.Network.uk,Food Network,MyTimeMovieNetwork.uk@SD,mytimemovienetwork,70.00000000000001
+uk,PBS.America.uk,PBS America,MTA8America.uk@SD,mta8america,66.66666666666667
+uk,MTV.80s.uk,MTV 80s,MUTV.uk@SD,mutv,77.14285714285715
+uk,Islam.TV.uk,Islam TV,MUTV.uk@SD,mutv,77.14285714285715
+uk,HGTV+1.uk,HGTV+1,ClubbingTV.us@UK,clubbingtv,77.14285714285715
+uk,TNT.Sports.4.HD.uk,TNT Sports 4 HD,S4C.uk@SD,s4c,72.0
+uk,Crime+Inv.HD.uk,Crime+Inv HD,PlutoTVAmericanTrueCrime.de@GB,plutotvamericantruecrime,69.23076923076923
+uk,QUEST.uk,QUEST,QwestTVJazzBeyond.fr@SD,qwesttvjazzbeyond,72.0
+uk,Xpanded.TV.uk,Xpanded TV,DerTV.uk@SD,dertv,72.0
+uk,TNT.Sports.9.HD.uk,TNT Sports 9 HD,TBNUK.uk@SD,tbn,72.0
+uk,Disc.History+1.uk,Disc.History+1,AutenticHistory.de@SD,autentichistory,69.23076923076923
+uk,NOW.90s00s.uk,NOW 90s00s,Now70s.uk@SD,now70s,75.00000000000001
+uk,SkySp.PL.HD.uk,SkySp PL HD,SkySportsCricket.uk@HD,skysportscricket,75.00000000000001
+uk,U.and.Real.Heroes.uk,U and Real Heroes,Andromeda.us@UK,andromeda,67.5
+uk,BBC.R4.Ex.uk,BBC R4 Ex,BBCUHD1.uk@SD,bbc1,77.14285714285715
+uk,ITV3.HD.uk,ITV3 HD,KanshiTV.uk@SD,kanshitv,77.14285714285715
+uk,NHK.World.HD.uk,NHK World HD,WorldPokerTour.us@UK,worldpokertour,69.23076923076923
+uk,U.and.W+1.uk,U and W+1,Andromeda.us@UK,andromeda,67.5
+uk,Sky.Cinema.Comedy.uk,Sky Cinema Comedy,SkyMix.uk@HD,skymix,65.45454545454547
+uk,ITV3+1.uk,ITV3+1,KanshiTV.uk@SD,kanshitv,77.14285714285715
+uk,QUEST+1.uk,QUEST+1,QwestTVJazzBeyond.fr@SD,qwesttvjazzbeyond,72.0
+uk,Channel.44.uk,Channel 44,Channel5.uk@SD,channel5,82.35294117647058
+uk,U.and.alibi.HD.uk,U and alibi HD,UAlibi.uk@SD,ualibi,81.81818181818181
+uk,GOD.Channel.uk,GOD Channel,Channel5.uk@SD,channel5,77.77777777777779
+uk,TWR.uk,TWR,TraceUK.uk@HD,trace,72.0
+uk,SONY.TV.HD.uk,SONY TV HD,IonTV.uk@SD,iontv,72.72727272727273
+uk,Sky.Arts.HD.uk,Sky Arts HD,SkySportsF1.uk@HD,skysportsf1,66.66666666666667
+uk,Browse.Shop.uk,Browse Shop,Pop.uk@SD,pop,72.0
+uk,Movies24.uk,Movies24,PlutoTVComedyMovies.de@GB,plutotvcomedymovies,77.14285714285715
+uk,Clubland.TV.uk,Clubland TV,ClubbingTV.us@UK,clubbingtv,70.0
+uk,GREAT!action+1.uk,GREAT!action+1,IonTV.uk@SD,iontv,67.5
+uk,Ahlebait.TV.uk,Ahlebait TV,AhlulbaytTV.uk@SD,ahlulbayttv,76.19047619047619
+uk,SkySp.Golf.uk,SkySp Golf,SkySportsGolf.uk@HD,skysportsgolf,81.81818181818181
+uk,Dunamis.TV.uk,Dunamis TV,ITV1.uk@London,itv1,67.5
+uk,Sky.One.HD.uk,Sky One HD,SkyNewsWeather.uk@SD,skynewsweather,81.81818181818181
+uk,SkyAdventureHD.uk,SkyAdventureHD,AdventureEarth.de@SD,adventureearth,71.42857142857143
+uk,Crime+Inv+1.uk,Crime+Inv+1,PlutoTVAmericanTrueCrime.de@GB,plutotvamericantruecrime,69.23076923076923
+uk,RTÉ.R.na.G.uk,RTÉ R na G,JAG.de@GB,jag,72.0
+uk,Madani.Chnl.uk,Madani Chnl,EmanChannel.uk@SD,emanchannel,66.66666666666667
+uk,5ACTION.uk,5ACTION,MrBeanLiveAction.uk@SD,mrbeanliveaction,83.07692307692308
+uk,WION.HD.uk,WION HD,BeyondBeliefFactorFiction.us@UK,beyondbelieffactorfiction,77.14285714285715
+uk,PCNE.Chinese.uk,PCNE Chinese,CNBCUK.uk@SD,cnbc,67.5
+uk,GEO.TV.uk,GEO TV,GODTV.uk@SD,godtv,80.0
+uk,5STAR+1.uk,5STAR+1,StarVijay.in@UK,starvijay,80.0
+uk,Film4.HD.uk,Film4 HD,PlutoTVCultFilms.de@GB,plutotvcultfilms,72.0
+uk,Smooth.uk,Smooth,BBCOne.uk@South,bbconesouth,65.45454545454547
+uk,5STAR.uk,5STAR,StarVijay.in@UK,starvijay,80.0
+uk,GEO.News.uk,GEO News,GBNews.uk@SD,gbnews,76.92307692307692
+uk,The.Craft.Store.uk,The Craft Store,SoReal.us@UK,soreal,65.45454545454547
+uk,Utsav.GOLD.uk,Utsav GOLD,UtsavPlus.uk@SD,utsavplus,66.66666666666667
+uk,Vox.Africa.uk,Vox Africa,NollyAfrica.uk@SD,nollyafrica,70.0
+uk,5USA+1.uk,5USA+1,UtsavBharat.uk@SD,utsavbharat,67.5
+uk,ITV4+1.uk,ITV4+1,KanshiTV.uk@SD,kanshitv,77.14285714285715
+uk,BBC.Asian.uk,BBC Asian,BBCPersian.uk@SD,bbcpersian,77.77777777777779
+uk,TNT.Sports.2.HD.uk,TNT Sports 2 HD,TBNUK.uk@SD,tbn,72.0
+uk,SkySp.Golf.HD.uk,SkySp Golf HD,SkySportsGolf.uk@HD,skysportsgolf,81.81818181818181
 uk,revelation.uk,revelation,MrBeanLiveAction.uk@SD,mrbeanliveaction,70.00000000000001
-uk,Really.uk,Really,SoReal.us@UK,soreal,66.66666666666667
+uk,ITV4.HD.uk,ITV4 HD,KanshiTV.uk@SD,kanshitv,77.14285714285715
+uk,Arirang.TV.HD.uk,Arirang TV HD,GODTV.uk@SD,godtv,67.5
+uk,Utsav.Gold.HD.uk,Utsav Gold HD,UtsavPlus.uk@SD,utsavplus,66.66666666666667
+uk,LFCTV.HD.uk,LFCTV HD,HellenicTV.uk@SD,hellenictv,67.5
+uk,Sky.Family.HD.uk,Sky Family HD,ENTFamily.uk@HD,entfamily,66.66666666666667
+uk,Foodxp.uk,Foodxp,PlutoTVFood.de@GB,plutotvfood,72.0
+uk,TLC.HD.uk,TLC HD,TJC.uk@SD,tjc,66.66666666666667
+uk,Word.Network.uk,Word Network,MyTimeMovieNetwork.uk@SD,mytimemovienetwork,70.00000000000001
+uk,BBC.Radio.Bristol.DAB.uk,BBC Radio Bristol DAB,BBCUHD1.uk@SD,bbc1,77.14285714285715
+uk,Sky.Kids.HD.uk,Sky Kids HD,MoonbugKids.uk@SD,moonbugkids,65.45454545454547
+uk,TNT.Sports.Ultimate.HD.uk,TNT Sports Ultimate HD,TBNUK.uk@SD,tbn,72.0
+uk,KICC.TV.uk,KICC TV,HellenicTV.uk@SD,hellenictv,72.0
+uk,Cartoonito.uk,Cartoonito,KTO.fr@SD,kto,72.0
+uk,Nick.Jr..HD.uk,Nick Jr. HD,Nickelodeon.uk@SD,nickelodeon,72.0
+uk,NDTV.24x7.uk,NDTV 24x7,ITV2.uk@HD,itv2,67.5
+uk,TNT.Sports.Box.Office.2.uk,TNT Sports Box Office 2,TBNUK.uk@SD,tbn,72.0
+uk,High.Street.TV.2.uk,High Street TV 2,ITV2.uk@HD,itv2,77.14285714285715
+uk,SkySp.F1.uk,SkySp F1,SkySportsF1.uk@HD,skysportsf1,77.77777777777779
+uk,The.Box.uk,The Box,DogtheBountyHunter.us@UK,dogthebountyhunter,75.00000000000001
+uk,Sky.Drama.HD.uk,Sky Drama HD,PlutoTVCrimeDrama.de@GB,plutotvcrimedrama,69.23076923076923
+uk,Sky.HistoryHD.uk,Sky HistoryHD,SkyMix.uk@HD,skymix,65.45454545454547
+uk,More4+1.uk,More4+1,MoreTVCrime.de@GB,moretvcrime,80.0
+uk,STV.Central.uk,STV Central,QVCExtra.uk@SD,qvcextra,66.66666666666667
+uk,BabyTV.uk,BabyTV,AhlulbaytTV.uk@SD,ahlulbayttv,75.00000000000001
+uk,BBC.R.Foyle.uk,BBC R Foyle,BBCUHD1.uk@SD,bbc1,77.14285714285715
+uk,HUM.EUROPE.uk,HUM EUROPE,MTA2Europe.uk@SD,mta2europe,73.6842105263158
+uk,Sky.Witness+1.uk,Sky Witness+1,SkyMix.uk@HD,skymix,65.45454545454547
+uk,GREAT!.tv.uk,GREAT! tv,GREATmovies.uk@UK,greatmovies,75.00000000000001
+uk,TNT.Sports.Box.Office.uk,TNT Sports Box Office,TBNUK.uk@SD,tbn,72.0
+uk,B4U.Movies.uk,B4U Movies,PlutoTVComedyMovies.de@GB,plutotvcomedymovies,72.0
 ie,RTE.One.HD.ie,RTE One HD,TheNewDetectives.de@GB,thenewdetectives,65.45454545454547
 ie,BBC1.HD.ie,BBC1 HD,BBCFourCBeebies.uk@HD,bbcfourcbeebies,77.14285714285715
 ie,BBC.TWO.HD.ie,BBC TWO HD,BBCThreeCBBC.uk@HD,bbcthreecbbc,72.0
